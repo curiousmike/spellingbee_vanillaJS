@@ -1,0 +1,53 @@
+body {
+    background-color: black
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.title {
+    background: blue;
+    color: white;
+    height: 20%;
+    font-family: "Alfa Slab One", serif;
+    font-size: 32px;
+    height: 20%;
+}
+
+.rankContainer {
+    background: yellow;
+    color: black;
+    height: 20%;
+}
+
+.foundWordContainer {
+  background: black;
+  color: white;
+  height: 20%;
+}
+
+.gameMapContainer {
+    background: gray;
+  color: white;
+  /* height: 50vh; */
+  height: 40%;
+}
+
+.gameMapLetters {
+    height:70%;
+    background: lightgray
+}
+
+.gameMapButtons {
+    height: 30%;
+    background:darkgray
+}
+
+@media screen and (min-width: 576px) {
+    .title{
+        background-color:red
+    }
+  }
