@@ -1,53 +1,75 @@
 body {
-    background-color: black
+  background-color: black;
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
 
 .title {
-    background: blue;
-    color: white;
-    height: 20%;
-    font-family: "Alfa Slab One", serif;
-    font-size: 32px;
-    height: 20%;
-}
-
-.rankContainer {
-    background: yellow;
-    color: black;
-    height: 20%;
-}
-
-.foundWordContainer {
-  background: black;
+  background: blue;
   color: white;
+  height: 20%;
+  font-family: "Alfa Slab One", serif;
+  font-size: 32px;
   height: 20%;
 }
 
+.parentContainer {
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+}
+
+.statContainer {
+  display: flex;
+  flex-direction: column;
+  height: 50%;
+}
+.statRankContainer {
+  background: yellow;
+  color: black;
+  height: 50%;
+}
+
+.statFoundWordContainer {
+  background: black;
+  color: white;
+  height: 50%;
+}
+
 .gameMapContainer {
-    background: gray;
+  background: gray;
   color: white;
   /* height: 50vh; */
-  height: 40%;
+  height: 50%;
 }
 
 .gameMapLetters {
-    height:70%;
-    background: lightgray
+  height: 70%;
+  background: lightgray;
 }
 
 .gameMapButtons {
-    height: 30%;
-    background:darkgray
+  height: 30%;
+  background: darkgray;
 }
 
 @media screen and (min-width: 576px) {
-    .title{
-        background-color:red
-    }
+  .title {
+    background-color: red;
   }
+  .parentContainer {
+    flex-direction: row-reverse;
+  }
+  .gameMapContainer {
+    width: 50vw;
+    height: 100%;
+  }
+  .statContainer {
+    width: 50vw;
+    height: 100%;
+  }
+}
