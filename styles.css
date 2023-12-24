@@ -1,11 +1,15 @@
+html,
 body {
   background-color: black;
+  height: 100vh;
+  margin: 0px;
+  padding: 0px;
 }
 
 .container {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 100%;
 }
 
 .title {
@@ -14,13 +18,13 @@ body {
   height: 20%;
   font-family: "Alfa Slab One", serif;
   font-size: 32px;
-  height: 20%;
 }
 
 .parentContainer {
   display: flex;
   flex-direction: column;
   height: 80%;
+  /* background-color: steelblue; */
 }
 
 .statContainer {
@@ -41,19 +45,24 @@ body {
 }
 
 .gameMapContainer {
+  display: flex;
+  flex-direction: column;
   background: gray;
   color: white;
-  /* height: 50vh; */
   height: 50%;
+}
+.gameMapUserTypedLetters {
+  height: 33%;
+  background-color: steelblue;
 }
 
 .gameMapLetters {
-  height: 70%;
+  height: 33%;
   background: lightgray;
 }
 
 .gameMapButtons {
-  height: 30%;
+  height: 33%;
   background: darkgray;
 }
 
